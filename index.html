@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Affair</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+
+
+<body>
+
+    <!-- Top Contact Links -->
+    <section class="links-wrapper">
+    
+         <div class="nav-link">
+            <a href="Facilties"> Facilties</a>
+         </div>
+
+         <div class="nav-link">
+            <a href="services">Services</a>
+          </div>
+
+          <div class="nav-link">
+            <a href="us">About Us</a>
+          </div>
+
+          <div class="nav-link">
+             <a href="findus">contact us</a>
+          </div>
+       
+        
+        
+    </section>
+
+    <!-- Logo Section -->
+    <section class="spaced-section">
+
+<img src="images/velvet-affair-logo.jpeg.jpeg" alt="Logo" width="200">
+
+
+    </section>
+
+    <!-- Services Overview -->
+    <section class="split-screen">
+        <div class="left-image">
+            <div class="image-text">Welcome to The Velvet Affair</div>
+        </div>
+        <div class="right-image">
+            <div class="image-text">
+                <div>We Offer Services Like:</div>
+                <div>- Transport</div>
+                <div>- Catering</div>
+                <div>- Event Decoration</div>
+            </div>
+        </div>
+        <div class="extra-image">
+            <div class="image-text">A Fabulous Event = A Brighter World</div>
+        </div>
+    </section>
+
+    
+    <section class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/party1.jpg" alt="Party 1" /></div>
+    <div class="swiper-slide"><img src="images/party2.jpg" alt="Party 2" /></div>
+    <div class="swiper-slide"><img src="images/party3.jpg" alt="Party 3" /></div>
+    <div class="swiper-slide"><img src="images/party4.jpg" alt="Party 4" /></div>
+    <div class="swiper-slide"><img src="images/party5.jpg" alt="Party 5" /></div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+</body>
+</html>
