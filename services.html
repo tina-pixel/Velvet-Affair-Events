@@ -1,21 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eventsforyou</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Velvet Affair Events</title>
+   <link rel="stylesheet" href="css/styles.css"> <!-- main CSS -->
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet"href="styles.css">
-
-</head>
+    <link rel="stylesheet" href="css/services.css"> <!-- page-specific CSS -->
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+      #hdn{
+        /* overflow: hidden; */
+      }
+    </style>
+  </head>
 <body>
-   <h1>Whatsapp</h1>
 
-<div class="navigation-wrapper">
-  <a href="email.html">info@crownevents.co.ke</a>
-  <a href="contact.html">+2547460694774</a>
-  <a href="whatsapp.html">whatsapp us here</a>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Our Services</h1>
+      <p>Crafting Unforgettable Moments with Elegance</p>
+    </div>
+  </header>
+
+  <!-- Services Grid -->
+  <section class="services">
+    
+    <div class="service-card">
+            <h2>Wedding & Dowery Planning</h2>
+      <p>Full-service planning for your dream wedding, from concept to flawless execution.</p>
+        
+
+<div class="service-images swiper weddingSwiper" id="hdn">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide img-box"><img src="images/wed1.jfif" alt="wedding photo"></div>
+      <div class="swiper-slide img-box"><img src="images/wed2.jfif" alt="wedding photo"></div>
+      <div class="swiper-slide img-box"><img src="images/wed3.jfif" alt="wedding photo"></div>
+      <div class="swiper-slide img-box"><img src="images/wed4.jfif" alt="wedding photo"></div>
+      <div class="swiper-slide img-box"><img src="images/wed5.jfif" alt="wedding photo"></div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
   </div>
+</div>
+
+    
+    <div class="service-card">
+      <h2>Corporate Events</h2>
+      <p>Professional event management tailored to your brand’s vision and goals.</p>
+      
+     <div class="service-images swiper corporateSwiper">
+        <div class="swiper-wrapper">
+    <div class="swiper-slide img-box"><img src="images/cop1.png" alt="corporate image"></div>
+    <div class="swiper-slide img-box"><img src="images/cop2.webp" alt="corporate image"></div>
+   
+   </div>
+  <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>     
+  </div>
+    </div>
+
+    
+    <div class="service-card">
+            <h2>Luxury Parties</h2>
+      <p>From birthdays to anniversaries, we style celebrations with a touch of velvet luxury.</p>
+          
+<div class="service-images swiper partySwiper">
+    <div class="swiper-wrapper">
+  <div class="swiper-slide img-box"><img src="images/party2.jpg" alt="party"></div>
+  <div class="swiper-slide img-box"><img src="images/party3.jpg" alt="party"></div>
+   <div class="swiper-slide img-box"><img src="images/party4.jpg" alt="party"></div>
+  <div class="swiper-slide img-box"><img src="images/party5.jpg" alt="party"></div>
+  </div>
+      <!-- Navigation arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+    </div>
+   
+        
+    <div class="service-card">
+      <h2>Pastries</h2>
+      <p> We also bake cakes, cookies ,brownies e.t.c </p>
+
+    <div class="service-images swiper pastriesSwiper">
+    <div class="swiper-wrapper">
+   <div class="swiper-slide img-box"> <img src="images/party1.jpg" alt="pastry"></div>
+    
+    <div class="swiper-slide img-box"> <img src="images/p2.jpg" alt="pastry"></div>
+    
+    <div class="swiper-slide img-box"><img src="images/p4.jpg" alt="pastry"></div>
+    
+     <div class="swiper-slide img-box"><img src="images/p6.jpg" alt="pastry"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+    </div>
+    
+
+
+      
+    </div>
+    </div>
+    </section>
+
+  <!-- Process Timeline -->
+  <section class="process">
+    <h2>Our Process</h2>
+    <div class="steps">
+      <div class="step">Consultation</div>
+      <div class="step">Planning</div>
+      <div class="step">Design</div>
+      <div class="step">Execution</div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>
+      "Velvet Affair made our wedding day absolutely magical. Everything was perfect!"
+      <cite>- Sarah & James</cite>
+    </blockquote>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to plan your Velvet Affair?</h2>
+    <a href="contact.html" class="btn">Book a Consultation</a>
+  </section>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var weddingSwiper = new Swiper(".weddingSwiper", {
+    slidesPerView: 1,  /* show 1 image at a time */
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      el: ".weddingSwiper .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".weddingSwiper .swiper-button-next",
+      prevEl: ".weddingSwiper .swiper-button-prev",
+    },
+  });
+
+  // coporate
+   var corporateSwiper =new Swiper(".corporateSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: { el: ".corporateSwiper .swiper-pagination", clickable: true },
+    navigation: {
+      nextEl: ".corporateSwiper .swiper-button-next",
+      prevEl: ".corporateSwiper .swiper-button-prev",
+    },
+  });
+
+// party.
+ var partySwiper = new Swiper(".partySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: { el: ".partySwiper .swiper-pagination", clickable: true },
+    navigation: {
+      nextEl: ".partySwiper .swiper-button-next",
+      prevEl: ".partySwiper .swiper-button-prev",
+    },
+  })
+
+// pastries
+ var pastriesSwiper = new Swiper(".pastriesSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: { el: ".pastriesSwiper .swiper-pagination", clickable: true },
+    navigation: {
+      nextEl: ".pastriesSwiper .swiper-button-next",
+      prevEl: ".pastriesSwiper .swiper-button-prev",
+    },
+  });
+
+
+</script>
+
 </body>
 </html>

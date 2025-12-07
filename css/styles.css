@@ -1,0 +1,310 @@
+/* GLOBAL RESET */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding:0;
+     overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f1e9; /* Light beige background */
+    font-family: "Georgia", serif;
+    color: #2f0d0d; /* Dark maroon text */
+}
+
+
+/* NAVIGATION BAR */
+.links-wrapper {
+    height: 90px;
+    background-color: #4a0c27; /* Deep maroon */
+    color: gold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    flex-wrap:wrap ;              /*helps avoid overflow*/
+}
+
+.links-wrapper > .nav-link a {
+    color: gold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.links-wrapper > .nav-link a:hover {
+    color: #fff8dc; /* Light ivory */
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px gold;
+}
+
+
+/* LOGO SECTION BACKGROUND */
+.spaced-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #4a0c27; /* Deep maroon */
+    
+}
+
+/* LOGO IMAGE HOVER EFFECT */
+.spaced-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    height: 120px;
+}
+
+.spaced-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #d4af37; /* Gold glow */
+    cursor: pointer;
+}
+
+/* BACKGROUND IMAGES */
+.left-image {
+    background-image: url("../images/ao.jpg");
+}
+
+.right-image {
+    background-image: url("../images/po.jpg");
+}
+
+.extra-image {
+    background-image: url("../images/vo.jpg");
+}
+
+.wow {
+    background-image: url("../images/ma.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* SPLIT SECTIONS */
+.split-screen {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.extra-image,
+.left-image,
+.right-image {
+    flex: 1;
+    min-height: 33.33vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ivory;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+/* TEXT INSIDE SECTIONS */
+.image-text {
+  background-color:  rgba(0,0,0,0.6);
+    position: absolute;
+    padding: 20px;
+    font-family: "Playfair Display", serif;
+       color: yellow;
+    font-size: 1.6rem;
+}
+
+.image-text:hover {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    color: #d4af37;
+    transform: scale(1.05);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+/* EXTRA SECTION TEXT PLACEMENT */
+.extra-image .image-text {
+    bottom: 40px;
+    top: auto;
+}
+
+/* CLEAN FIX FOR FLOATING TEXT */
+.extra-image::after,
+.left-image::after,
+.right-image::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.swiper-slide img {
+  width: 100%;
+  height: 170vh;
+  object-fit: cover;
+  
+}
+
+
+.left-image, .right-image, .extra-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    
+  /* Navigation bar stacked */
+  .links-wrapper {
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .nav-link {
+    margin: 5px 0;
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none; /* will be toggled via JS */
+  }
+
+
+  /* Logo image scaling */
+
+  .spaced-section{
+    padding: 20px;
+  }
+  .spaced-section img {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Split sections stacked */
+  .split-screen {
+    flex-direction: column;
+  }
+  .left-image,
+  .right-image,
+  .extra-image {
+    min-height: 40vh;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  /* Reduce text padding for small screens */
+  .image-text {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* Swiper height smaller on phones */
+  .swiper {
+    height: auto;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* show full image */
+    background-color: #000; /* optional padding background */
+  }
+}
+
+/* tablets */
+@media (min-width:601px) and (max-width:1024px){
+.links-wrapper{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.spaced-section img{
+width:150px;
+}
+.split-screen{
+    flex-direction: column;
+}
+.left-image,.right-image,.extra-image{
+    min-height: 50vh;
+    font-size: 1.4rem;
+}
+.image-text{
+    font-size: 1.2rem;
+}
+.swiper{
+    height:60vh;
+}
+}
+
+/* Large Desktops */
+@media (min-width: 1025px) {
+  .split-screen {
+    flex-direction: row;
+  }
+  .left-image, .right-image, .extra-image {
+    min-height: 33.33vh;
+  }
+}
+
+/* ===== MOBILE NAVIGATION ===== */
+.mobile-menu {
+  display: none; /* hidden by default */
+  flex-direction: column;
+  background-color: #4a0c27;
+  width: 100%;
+}
+
+.mobile-menu a {
+  padding: 10px;
+  color: gold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mobile-menu a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: gold;
+  margin: 4px 0;
+}
+

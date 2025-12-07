@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Events planing , Catering , pastries.Crafting your dreams with elegance & Creating memories that will last."> 
+    <meta name="keywords" content="catering,events,pastries,weddings,birthdays">
     <title>The Velvet Affair</title>
 
     <!-- Google Font -->
@@ -12,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+
+   <link rel="stylesheet" href="css/styles.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -23,26 +26,40 @@
 
     <!-- Top Contact Links -->
     <section class="links-wrapper">
+      <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
     
          <div class="nav-link">
-            <a href="Facilties"> Facilties</a>
+            <a href="facilities.html"> Facilties</a>
          </div>
 
          <div class="nav-link">
-            <a href="services">Services</a>
+            <a href="services.html">Services</a>
           </div>
 
           <div class="nav-link">
-            <a href="us">About Us</a>
+            <a href="About Us.html">About Us</a>
           </div>
 
           <div class="nav-link">
-             <a href="findus">contact us</a>
+             <a href="contact us.html">contact us</a>
           </div>
        
         
         
     </section>
+
+    <!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="facilities.html">Facilities</a>
+  <a href="services.html">Services</a>
+  <a href="About Us.html">About Us</a>
+  <a href="contact us.html">Contact Us</a>
+</div>
+
 
     <!-- Logo Section -->
     <section class="spaced-section">
@@ -99,6 +116,14 @@
       prevEl: '.swiper-button-prev',
     },
   });
+</script>
+
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
 </script>
 
 </body>
